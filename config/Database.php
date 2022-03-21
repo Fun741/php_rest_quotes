@@ -1,10 +1,10 @@
 <?php
     class Database {
         //DB params
-        private $host = 'localhost';
-        private $db_name ='quotesdb';
-        private $username = 'root';
-        private $password = '';
+        private $host = 'acw2033ndw0at1t7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+        private $db_name ='qq98270q4ma5o9jx';
+        private $username = 't468dm1c55876o10';
+        private $password = getenv(JAWS_DB);
         private $conn;
 
         //DB connect
