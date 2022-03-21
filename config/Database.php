@@ -2,14 +2,15 @@
     class Database {
         //DB params
         
-        /*
+        
         private $host = 'acw2033ndw0at1t7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
         private $db_name ='qq98270q4ma5o9jx';
         private $username = 't468dm1c55876o10';
         private $password = 'thn3v0224bqd1ybr';
         private $conn;
-        */
         
+        
+        /*
         $url = getenv('JAWSDB_URL');
         $dbparts = parse_url($url);
         
@@ -17,6 +18,7 @@
         $username = $dbparts['t468dm1c55876o10'];
         $password = $dbparts['thn3v0224bqd1ybr'];
         $database = ltrim($dbparts['qq98270q4ma5o9jx'],'/');
+        */
 
         //DB connect
         public function connect() {
