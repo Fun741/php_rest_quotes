@@ -39,11 +39,10 @@
         
 
         //turn to json
-        echo json_encode($posts_arr);
+        print_r(json_encode($posts_arr));
 
     } else {
         echo json_encode(
             array('message' => 'No Posts Fount')
         );
     }
-
