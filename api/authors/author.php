@@ -37,6 +37,7 @@
             array_push($posts_arr['data'], $post_item);
         }
         
+        //new
 
         //turn to json
         echo json_encode($posts_arr);
