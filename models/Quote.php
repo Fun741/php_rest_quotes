@@ -23,15 +23,9 @@
                     q.id,
                     q.quote,
                     q.categoryId,
-                    q.authorId,
-                    a.author,
-                    c.category
+                    q.authorId
                 FROM
                     ' . $this->table . ' q
-                LEFT JOIN 
-                    authors a ON q.authorId = a.id
-                LEFT JOIN 
-                    categories c ON q.categoryId = c.id
                 ORDER BY
                     q.id DESC';
 
