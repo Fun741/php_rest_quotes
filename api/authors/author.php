@@ -46,4 +46,3 @@
             array('message' => 'No Posts Fount')
         );
     }
-
