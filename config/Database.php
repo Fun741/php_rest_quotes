@@ -22,7 +22,7 @@
         */
         
         
-        $url = getenv('JAWS_DB');
+        $url = getenv('JAWSDB_URL');
         $dbparts = parse_url($url);
         
         $hostname = $dbparts['acw2033ndw0at1t7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'];
