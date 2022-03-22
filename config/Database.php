@@ -15,21 +15,20 @@
         $url = getenv('JAWSDB_URL');
         $dbparts = parse_url($url);
         
-        $hostname = $dbparts['host'];
-        $username = $dbparts['user'];
-        $password = $dbparts['pass'];
-        $database = ltrim($dbparts['path'],'/');
-        */
-        
-        
-        $url = getenv('JAWSDB_URL');
-        $dbparts = parse_url($url);
-        
         $hostname = $dbparts['acw2033ndw0at1t7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com']; //host name
         $username = $dbparts['t468dm1c55876o10']; //user name
         $password = $dbparts['thn3v0224bqd1ybr']; // password
         $database = ltrim($dbparts['qq98270q4ma5o9jx'],'/'); //database name in workshop
+        */
         
+       
+        $url = getenv('JAWSDB_URL');
+        $dbparts = parse_url($url);
+        
+        $hostname = $dbparts['host'];
+        $username = $dbparts['user'];
+        $password = $dbparts['pass'];
+        $database = ltrim($dbparts['path'],'/');
         
         
 
