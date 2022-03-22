@@ -49,6 +49,7 @@
     
         function __construct() {
             $url = getenv('JAWSDB_URL');
+            $dbparts = parse_url($url);
             $this->conn = null;
         }
         
@@ -57,7 +58,7 @@
         public function connect() {
 
             try {
-                $dbparts = parse_url($url);
+                
                 $hostname = $dbparts['host'];
                 $username = $dbparts['user'];
                 $password = $dbparts['pass'];
