@@ -21,7 +21,7 @@
         $database = ltrim($dbparts['qq98270q4ma5o9jx'],'/'); //database name in workshop
         */
         
-       
+        /*
         $url = getenv('JAWSDB_URL');
         $dbparts = parse_url($url);
         
@@ -45,4 +45,31 @@
             }
             return $this->conn;
         }
+        */
+    
+        function __construct() {
+            $url = getenv('JAWSDB_URL');
+            $this->conn = null;
+        }
+        
+
+        //DB connect
+        public function connect() {
+
+            try {
+                $dbparts = parse_url($url);
+                $hostname = $dbparts['host'];
+                $username = $dbparts['user'];
+                $password = $dbparts['pass'];
+                $database = ltrim($dbparts['path'],'/');
+                
+                $this->conn = new PDO('mysql:host=' . $this->hostname . ';dbname=' . $this->database,
+                $this->username, $this->password);
+                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch(PDOException $e) {
+                echo 'Connection Error: '. $e->getMessage();
+            }
+            return $this->conn;
+        }
+    
     }
