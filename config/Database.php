@@ -10,6 +10,7 @@
         private $conn;
         */
         
+        /*
         $url = getenv('JAWS_DB');
         $dbparts = parse_url($url);
         
@@ -17,8 +18,9 @@
         $username = $dbparts['user'];
         $password = $dbparts['pass'];
         $database = ltrim($dbparts['path'],'/');
+        */
         
-        /*
+        
         $url = getenv('JAWS_DB');
         $dbparts = parse_url($url);
         
@@ -26,7 +28,7 @@
         $username = $dbparts['t468dm1c55876o10'];
         $password = $dbparts['thn3v0224bqd1ybr'];
         $database = ltrim($dbparts['qq98270q4ma5o9jx'],'/');
-        */
+        
         
         
 
